@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
+import UniversalForm from '../../Shared/UniversalForm/UniversalForm.jsx'
 
 /* Scripts ---------------------------*/
 import { contactFields } from '../../../common/formData.js'
 
-/* Components ---------------------------*/
-import UniversalForm from '../../Shared/UniversalForm/UniversalForm.jsx'
+
 const ContactForm = () => {
 
-    console.log('contactFields', contactFields)
     return (
         <ContactFormStyled className='ContactForm'>
-            <UniversalForm fields={ contactFields } /> 
+            <UniversalForm fields={ contactFields } />
         </ContactFormStyled>
     );
 }
@@ -20,5 +20,7 @@ const ContactForm = () => {
 export default ContactForm;
 
 const ContactFormStyled = styled.div`
-    
+    max-width:500px;
+
+
 `;

@@ -1,25 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
 
-/* Components------*/
-// import Slideshow from './Slideshow'; 
-import Tabbed from './Tabbed/Tabbed';
-import Staff from './Staff/Staff';
+/* Components ---------------------------*/
+import Tabbed from './Tabbed/Tabbed.jsx';
+
 
 const Welcome = () => {
+
     return (
-        <div>
-            <h1>Welcome</h1>
-            {/* <Slideshow />  */}
-            <div className= "nested" >
-                <Tabbed />
-            </div>
-
-            <div className= "nested" >
-            <Staff />
-            </div>
-
-        </div>
+        <WelcomeStyled className='Welcome'>
+            <Tabbed/>     
+        </WelcomeStyled>
     );
 }
 
 export default Welcome;
+
+const WelcomeStyled = styled.div`
+
+color:white;
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+`;

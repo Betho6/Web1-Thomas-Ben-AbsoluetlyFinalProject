@@ -33,7 +33,7 @@ export default Light;
 
 const LightStyled = styled.div`
     
-    background-color: #fff;
+    background-image:url('../../../assets/img/nav-bg.jpg');
     padding: 20px;
 
     position: absolute; 

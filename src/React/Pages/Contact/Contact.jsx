@@ -1,19 +1,35 @@
 import React from 'react';
-/* Components ---------------------------*/
+import styled from 'styled-components';
 
-import Profile from './Profile.jsx'
-import ContactFrom from './ContactForm.jsx'
-import GoogleMap from './GoogleMap'
+/* Components ---------------------------*/
+import ContactForm from './ContactForm.jsx'
+import EmailForm from './EmailForm.jsx'
 
 const Contact = () => {
+
     return (
-        <div>
-            <h1>Contact</h1>
-            <Profile />
-            <ContactFrom />
-            <GoogleMap />
-        </div>
+        <ContactStyled className='Contact'>
+            <div className="FullWidth">
+                <img src="../../../assets/img/intouch.jpg" alt=""/>
+            </div>
+            
+            <h1>Stay in the Know!</h1>
+            <EmailForm/>
+
+            <h1>Get in Touch with us!</h1>
+            <ContactForm/> 
+        </ContactStyled>
     );
 }
 
 export default Contact;
+
+const ContactStyled = styled.div`
+
+background-color:black;
+color:white;
+padding: 0px;
+margin: 0px;
+
+    
+`;

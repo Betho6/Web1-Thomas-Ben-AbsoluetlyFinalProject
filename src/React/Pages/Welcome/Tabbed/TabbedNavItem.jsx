@@ -30,14 +30,14 @@ const TabbedNavItemStyled = styled.div`
     color: white;
     line-height: 30pt;
     display: inline-block;
-    width: 100px;
+    width: 200px;
     text-align: center;
     margin-right: 5px;
     border-radius: 5px 5px 0px 0px;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
 
-background-color: #065757;
+background-color: black;
 
 &:hover {
     background-color: #032d2d;

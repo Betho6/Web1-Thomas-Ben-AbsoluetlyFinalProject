@@ -2,21 +2,23 @@ import React from'react';
 import { Switch, Route } from 'react-router-dom'
 
 /* Components---------------------------*/
-import Welcome from './Pages/Welcome/Welcome.jsx';
-import Services from './Pages/Services/Services.jsx';
-import Contact from './Pages/Contact/Contact.jsx';
-import Login from './Pages/Login/Login.jsx';
+import welcome from './Pages/Welcome/Welcome.jsx';
+import taplist from './Pages/Tap List/TapList.jsx';
+import vendors from './Pages/Vendors.jsx';
+import whatson from './Pages/WhatsOn/WhatsOn.jsx';
+import contact from './Pages/Contact/Contact.jsx';
+
 
 
 const Main = () => {
 return (
     <main>
         <Switch>
-            <Route path= '/services' component={ Services } />
-            <Route path= '/contact' component={ Contact } />
-            <Route path= '/services' component={ Login } />
-            <Route path= '/login' component={ Login } />
-            <Route path= '/' component={ Welcome } />
+            <Route path= '/taplist' component={ taplist } />
+            <Route path= '/vendors' component={ vendors } />
+            <Route path= '/whatson' component={ whatson } />
+            <Route path= '/contact' component={ contact } />
+            <Route path= '/' component={ welcome } />
 
 
         </Switch>

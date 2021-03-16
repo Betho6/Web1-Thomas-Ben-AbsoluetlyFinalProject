@@ -6,10 +6,6 @@ import Light from './Light.jsx'
 
 const Lightbox = ({ show, onHide, children, width='340px' }) => {
 
-    
-    if (!show) { return '';}
-
-
     if (!show) { return '';}
     
     return (
@@ -17,7 +13,7 @@ const Lightbox = ({ show, onHide, children, width='340px' }) => {
             <Light onHide= {onHide} width={ width }>
                 {children}
             </Light>
-        </LightboxStyled>        
+        </LightboxStyled>
     );
 }
 
@@ -34,4 +30,6 @@ const LightboxStyled = styled.div`
 
     z-index: 1000;
 
+
+    
 `;
