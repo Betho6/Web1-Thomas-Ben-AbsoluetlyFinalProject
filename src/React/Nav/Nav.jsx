@@ -20,6 +20,7 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.div`
+    padding-top:25px;
 
     
 `;

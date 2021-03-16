@@ -14,10 +14,5 @@ export const slides = [
         image: '/assets/img/Slideshow/slide-3.jpg',
         title: 'Live Music Thursdays 6pm – 10pm',
     },
-    {
-        arrKey: 3,
-        image: '/assets/img/Slideshow/slide-4.jpg',
-        title: 'Slide 4 Title',
-    },
     
 ]

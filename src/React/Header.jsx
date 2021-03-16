@@ -35,22 +35,24 @@ export default Header;
 const HeaderStyled = styled.div`
 
 background-image: url('../../../assets/img/nav-bg.jpg');
-@media ${mq.Small}{
+height:100px;
+
+img{
+    height: 100px;
+}
+
+
+@media ${mq.tablet}{
+display: flex;
+}
+
+@media ${mq.desktop}{
 img {
 display: block;
 margin-left: auto;
 margin-right: auto;
 height: 100px ;
 max-width: 100%;
-}
-}
-
-@media ${mq.Mobile}{
-    display:flex;
-
-    img{
-        max-height: 100px;
     }
-}    
-
+}
 `;

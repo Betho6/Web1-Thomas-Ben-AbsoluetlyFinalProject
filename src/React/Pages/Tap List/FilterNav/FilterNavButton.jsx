@@ -31,5 +31,6 @@ button{
     border-color:black;
     color: white;
     background-color: black;
+    font-size: 20pt;
 }
 `;

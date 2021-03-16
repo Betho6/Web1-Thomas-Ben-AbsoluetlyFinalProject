@@ -9,7 +9,6 @@ import useMediaQuery from '../../../../common/useMediaQuery.js';
 /* Components ---------------------------*/
 import TabbedNav from './TabbedNav.jsx';
 import TabbedContent from './TabbedContent.jsx';
-import TabbedContentMobile from './TabbedContentMobile.jsx'
 
 const Tabbed = () => {
 
@@ -22,18 +21,11 @@ const Tabbed = () => {
     }
 
     return (
-        <TabbedStyled className='Tabbed'>
-            <div className="left">
-                <img src={ chosenTab.image } alt={chosenTab.title} />
-            </div>
-    {
-        isSmall
-            ?<TabbedContentMobile/>
-            :<div>
+        <TabbedStyled className='Tabbed' chosenURL={ chosenTab.image }>
+            <div className='myTabs'>
                 <TabbedNav changeTabs={ changeTabs} tabItems= { tabItems } chosenTab= {chosenTab}/>
                 <TabbedContent chosenTab={ chosenTab } />
             </div>
-    }
         </TabbedStyled>
     );
 }
@@ -41,5 +33,14 @@ const Tabbed = () => {
 export default Tabbed;
 
 const TabbedStyled = styled.div`
-overflow:hidden;
+    overflow:hidden;
+
+    padding-top: 300px;
+
+    background-image: url('${({chosenURL}) => chosenURL}');
+    background-size: cover;
+    background-position:center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 `;

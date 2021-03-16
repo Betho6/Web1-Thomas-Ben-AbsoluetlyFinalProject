@@ -38,14 +38,39 @@ export default NavMobile;
 const NavMobileStyled = styled.div`
 
 .hamburger{
-    justify-content:right;
-    color: white;
-    margin-left: auto;
-}
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    padding-top: 9px;
+    cursor: pointer;
 
+    z-index:1001;
+    }
+    
     svg{
         font-size: 30px;
         color: white;
     }
+
+    .nav-wrapper {
+    background-image: url('../../../assets/img/nav-bg.jpg');
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 150px;
+
+    z-index: 1000;
+    }
+
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-bottom: 5px;
+
     
 `;

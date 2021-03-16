@@ -40,9 +40,9 @@ const TabbedNavItemStyled = styled.div`
 background-color: black;
 
 &:hover {
-    background-color: #032d2d;
+    background-color: #260a0a;
 }
 &.active{
-        background-color: teal;
+        background-color: #302f2f;
     }      
 `;

@@ -27,5 +27,4 @@ export default FilterNav;
 
 const FilterNavStyled = styled.div`
     display: flex;
-
 `;
